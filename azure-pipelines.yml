@@ -8,6 +8,8 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+  name: Default
+  demands: SpecialSoftware
 
 variables:
   GOBIN:  '$(GOPATH)/bin' # Go binaries path
